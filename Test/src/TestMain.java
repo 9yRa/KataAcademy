@@ -209,7 +209,7 @@ public class TestMain<arr> {
         Scanner scan = new Scanner(System.in);
         String list = scan.nextLine();
         String[] arr = list.split(" ");
-        if(!(arr.length>3))
+        if(arr.length<3)
             try{
                 throw new MyException();
             }catch (MyException e) {
